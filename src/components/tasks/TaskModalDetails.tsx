@@ -4,10 +4,10 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import {useQuery, useMutation, useQueryClient} from '@tanstack/react-query'
 import { getTaskById, updateStatus } from '@/api/TaskAPI';
 import { toast } from 'react-toastify';
-import { formatDate } from '../../../../uptask_backend/src/utils/utils';
 import { statusTranslations } from '@/locales/es';
 import { TaskStatus } from '@/types/index';
 import NotesPanel from '../notes/NotesPanel';
+import { formatDate } from '../../utils/utils';
 
 
 
