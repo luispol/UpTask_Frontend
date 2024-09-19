@@ -1,11 +1,11 @@
 import { Note } from "@/types/index"
 import { useAuth } from "@/hooks/useAuth"
 import { useMemo } from "react"
+import { formatDate } from '../../utils/utils';
 import { useMutation,  useQueryClient } from '@tanstack/react-query';
 import { deleteNote } from "@/api/NoteAPI"
 import { toast } from "react-toastify"
 import { useLocation, useParams } from "react-router-dom"
-import { formatDate } from '../../utils/utils';
 
 type NoteDetailProps = {
     note: Note
